@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(1, 167, 196);
+}
+.container {
+  background-color: white;
+  border-radius: 20px;
+  width: 400px;
+}
+.container header {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper {
+  padding: 0 20px 20px;
+}
+.container .chuffled-letters {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 16px;
+  padding: 20px;
+  font-size: bold;
+}
+.wrapper .hint {
+    margin-bottom: 5px;
+}
+.wrapper  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    opacity: 1;
+    caret-color: rgb(183, 183, 207);
+}
+.wrapper  input:focus::placeholder {
+    transition: 0.3s;
+    opacity: 0;
+}
+.opts {
+    display: flex;
+    gap: 20px;
+}
+.opts button {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.opts button.refresh-wrd {
+    background-color: gray;
+    color: white;
+    box-shadow: -2px 2px 3px rgb(113, 113, 113) inset;
+}
+.opts button.refresh-wrd:hover {
+    background-color: rgba(128, 128, 128, 0.803);
+    color: white;
+    box-shadow: -2px 2px 3px rgba(113, 113, 113,0.3) inset;
+}
+.opts button.check-wrd {
+    background-color: rgb(66, 28, 255);
+    color: white;
+    box-shadow: -2px 2px 3px rgb(40, 4, 223) inset;
+}
+.opts button.check-wrd:hover {
+    background-color: rgb(66, 28, 255, 0.803);
+    color: white;
+    box-shadow: -2px 2px 3px rgba(22, 2, 125, 0.3) inset;
+}
